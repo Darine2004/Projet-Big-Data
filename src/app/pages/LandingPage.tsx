@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { Activity, Database, Cpu, TrendingUp, Zap, Server, ArrowRight, Users, Target, Cog } from 'lucide-react';
 import { Card } from '../components/ui/card';
 import { Button } from '../components/ui/button';
@@ -8,9 +8,9 @@ export default function LandingPage() {
 
   const teamMembers = [
     'Rezgui Darine',
+    'Zakraoui Ayet allah',
     'Dhaouadi Nour Elhouda',
-    'Arif Nour',
-    'Zakraoui Ayet allah'
+     'Arif Nour'
   ];
 
   const features = [
