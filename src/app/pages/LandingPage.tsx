@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import { useNavigate } from 'react-router-dom';
 import { Activity, Database, Cpu, TrendingUp, Zap, Server, ArrowRight, Users, Target, Cog } from 'lucide-react';
+=======
+import { useNavigate } from 'react-router';
+import { Activity, Database, Cpu, TrendingUp, Zap, Server, ArrowRight, Users, Target, Cog, GitBranch } from 'lucide-react';
+>>>>>>> c714a265f1575e239d219bebf225668ec32dd61a
 import { Card } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 
@@ -102,14 +107,25 @@ export default function LandingPage() {
               les pannes industrielles et optimiser la maintenance dans l'Industrie 4.0
             </p>
 
-            <Button 
-              onClick={() => navigate('/dashboard')}
-              size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-blue-600/20 transition-all hover:shadow-xl hover:shadow-blue-600/30"
-            >
-              Accéder au Dashboard
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button
+                onClick={() => navigate('/dashboard')}
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-blue-600/20 transition-all hover:shadow-xl hover:shadow-blue-600/30"
+              >
+                Accéder au Dashboard
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+              <Button
+                onClick={() => navigate('/pipeline')}
+                size="lg"
+                variant="outline"
+                className="border-green-800 text-green-400 hover:bg-green-950 hover:text-green-300 px-8 py-6 text-lg rounded-xl"
+              >
+                <GitBranch className="mr-2 w-5 h-5" />
+                Pipeline live
+              </Button>
+            </div>
           </div>
 
           {/* Team Section */}
