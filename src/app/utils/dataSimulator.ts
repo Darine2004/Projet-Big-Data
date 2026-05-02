@@ -58,11 +58,11 @@ const calculateFailureProbability = (sensors: SensorData, status: MachineStatus)
 // Génère les données pour toutes les machines
 export const generateMachineData = (): Machine[] => {
   const machineTypes = [
-    { type: 'Presse Hydraulique', count: 3 },
-    { type: 'Compresseur', count: 2 },
-    { type: 'Moteur Principal', count: 4 },
-    { type: 'Pompe', count: 3 },
-    { type: 'Convoyeur', count: 2 },
+    { type: 'Sérigraphe à Pâte', count: 3 },
+    { type: 'Machine Pick & Place', count: 2 },
+    { type: 'Four à Refusion', count: 4 },
+    { type: 'Inspection Optique AOI', count: 3 },
+    { type: 'Soudeuse à Vague', count: 2 },
   ];
 
   const machines: Machine[] = [];
