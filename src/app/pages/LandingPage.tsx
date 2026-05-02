@@ -15,7 +15,7 @@ export default function LandingPage() {
     'Rezgui Darine',
     'Zakraoui Ayet allah',
     'Dhaouadi Nour Elhouda',
-     'Arif Nour'
+    'Arif Nour'
   ];
 
   const features = [
